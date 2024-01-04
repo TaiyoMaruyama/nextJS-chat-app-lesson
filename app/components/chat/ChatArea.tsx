@@ -1,6 +1,13 @@
 import React from "react";
 import { Call, Menu, PhotoCamera, PhotoLibrary } from "@mui/icons-material";
-import { Box, Button, IconButton, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  IconButton,
+  TextField,
+  Typography,
+  colors,
+} from "@mui/material";
 import { ReceivedChatBubble } from "./chatBubbleFrame/ReceivedChatBubble";
 import { SendChatBubble } from "./chatBubbleFrame/SendChatBubble";
 import {
@@ -8,6 +15,10 @@ import {
   CHAT_AREA_HEIGHT,
   CHAT_AREA_WIDTH,
   chatDemo,
+  GRADATION_1,
+  GRADATION_2,
+  GRADATION_3,
+  GRADATION_4,
 } from "@/app/consts/chat";
 
 const ChatBubble = () => {
@@ -19,7 +30,7 @@ const ChatBubble = () => {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        sx={{ px: 2, bgcolor: "#0b031a" }}
+        sx={{ px: 2, ...GRADATION_3 }}
         height={CHAT_AREA_ACCESSORY}
       >
         <Typography sx={{ fontSize: 18, fontWeight: "bold" }}>
@@ -37,7 +48,7 @@ const ChatBubble = () => {
       {/* チャット一覧 */}
       <Box
         height={CHAT_AREA_HEIGHT}
-        sx={{ p: 1, overflowY: "auto", bgcolor: "darkgray" }}
+        sx={{ p: 1, overflowY: "auto", ...GRADATION_4 }}
       >
         {chatDemo.map((chat) =>
           chat.sendID === "xxxx" ? (
@@ -61,7 +72,7 @@ const ChatBubble = () => {
         minHeight={CHAT_AREA_ACCESSORY}
         position="fixed"
         bottom={0}
-        sx={{ bgcolor: "#0b031a" }}
+        sx={{ ...GRADATION_3 }}
       >
         <Box
           display="flex"
@@ -81,16 +92,21 @@ const ChatBubble = () => {
             multiline
             maxRows={5}
             size="small"
+            InputProps={{
+              sx: {
+                color: "white",
+              },
+            }}
             sx={{
               mr: 1,
               maxLines: 3,
               overflowWrap: "break-word",
               "& .MuiInputBase-root": {
-                bgcolor: "white",
+                ...GRADATION_1,
               },
             }}
           />
-          <Button id="chat-send" variant="contained">
+          <Button id="chat-send" variant="outlined">
             送信
           </Button>
         </Box>

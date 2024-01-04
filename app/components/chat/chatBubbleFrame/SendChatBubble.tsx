@@ -1,3 +1,4 @@
+import { GRADATION_5 } from "@/app/consts/chat";
 import { AccountCircle } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
 import React, { FC } from "react";
@@ -17,13 +18,13 @@ export const SendChatBubble: FC<{
         maxWidth={500}
         sx={{
           borderRadius: 2,
-          bgcolor: "darkblue",
+          ...GRADATION_5,
           overflowWrap: "break-word",
           p: 1,
           mx: 1,
         }}
       >
-        {text}
+        <Typography sx={{ fontSize: 14 }}>{text}</Typography>
       </Box>
       <AccountCircle sx={{ fontSize: 36 }} />
     </Box>
