@@ -3,19 +3,19 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <Box width={180}>
+    <Box width={280}>
       <List>
-        <ListItemButton>koko</ListItemButton>
-        <ListItemButton>koko</ListItemButton>
+        <ListItemButton>うーま</ListItemButton>
+        <ListItemButton>うーま</ListItemButton>
         <Divider></Divider>
-        <ListItemButton>koko</ListItemButton>
-        <ListItemButton>koko</ListItemButton>
-        <ListItemButton>koko</ListItemButton>
+        <ListItemButton>うーま</ListItemButton>
+        <ListItemButton>うーま</ListItemButton>
+        <ListItemButton>うーま</ListItemButton>
         <Divider></Divider>
-        <ListItemButton>koko</ListItemButton>
-        <ListItemButton>koko</ListItemButton>
-        <ListItemButton>koko</ListItemButton>
-        <ListItemButton>koko</ListItemButton>
+        <ListItemButton>うーま</ListItemButton>
+        <ListItemButton>うーま</ListItemButton>
+        <ListItemButton>うーま</ListItemButton>
+        <ListItemButton>うーま</ListItemButton>
       </List>
     </Box>
   );
