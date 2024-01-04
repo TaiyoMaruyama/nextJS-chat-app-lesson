@@ -1,5 +1,12 @@
+// サイドバーの横幅を統一
+export const SIDEBAR_WIDTH = "20vw";
 // チャットエリアの横幅を統一
 export const CHAT_AREA_WIDTH = "80vw";
+
+// チャットエリアの上下にあるフレームの高さを調節
+export const CHAT_AREA_ACCESSORY = "10vh";
+
+export const CHAT_AREA_HEIGHT = "80vh";
 
 export const chatDemo = [
   {

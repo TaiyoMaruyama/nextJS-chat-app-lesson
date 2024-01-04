@@ -17,7 +17,7 @@ export const SendChatBubble: FC<{
         maxWidth={500}
         sx={{
           borderRadius: 2,
-          bgcolor: "lightgreen",
+          bgcolor: "darkblue",
           overflowWrap: "break-word",
           p: 1,
           mx: 1,

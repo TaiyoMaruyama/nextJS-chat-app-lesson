@@ -14,7 +14,7 @@ export const ReceivedChatBubble: FC<{
         maxWidth={500}
         sx={{
           borderRadius: 2,
-          bgcolor: "lightgrey",
+          bgcolor: "#160633",
           overflowWrap: "break-word",
           p: 1,
           mx: 1,
